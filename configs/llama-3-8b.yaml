@@ -1,0 +1,23 @@
+# vLLM-CPP Configuration: LLaMA-3 8B
+model:
+  arch: llama
+  path: ./models/Llama-3.1-8B-Instruct
+  tokenizer_path: ./models/Llama-3.1-8B-Instruct/tokenizer.json
+
+precision:
+  quantization: w4a16
+
+memory:
+  gpu_memory_utilization: 90
+  block_size: 16
+  max_num_seqs: 64
+  max_model_len: 8192
+
+sampling:
+  temperature: 1.0
+  top_p: 0.95
+  top_k: 50
+  repetition_penalty: 1.1
+
+server:
+  port: 8000

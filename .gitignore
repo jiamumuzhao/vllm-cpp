@@ -1,0 +1,14 @@
+# CMake build output
+/build/
+/cmake-build-*/
+
+# Downloaded model weights and tokenizer assets
+/models/*
+!/models/.gitkeep
+
+# Local editor and OS files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~

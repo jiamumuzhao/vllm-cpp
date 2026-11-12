@@ -1,0 +1,22 @@
+# vLLM-CPP Configuration: Qwen 2.5 7B
+model:
+  arch: qwen
+  path: ./models/Qwen2.5-7B-Instruct
+
+precision:
+  quantization: w4a16
+
+memory:
+  gpu_memory_utilization: 90
+  block_size: 32
+  max_num_seqs: 48
+  max_model_len: 32768
+
+sampling:
+  temperature: 0.7
+  top_p: 0.8
+  top_k: 20
+  repetition_penalty: 1.05
+
+server:
+  port: 8000
